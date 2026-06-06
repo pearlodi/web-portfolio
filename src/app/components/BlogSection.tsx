@@ -208,7 +208,7 @@ export function BlogSection() {
           {/* Featured article — takes 2 cols */}
          
           {/* Rest — 2x2 grid in remaining 3 cols */}
-          <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {rest.map((article, i) => (
               <ArticleCard key={article.id} article={article} delay={0.08 * (i + 1)} />
             ))}

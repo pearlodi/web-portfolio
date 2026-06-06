@@ -194,7 +194,7 @@ export function ArtifactsSection() {
       </motion.div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {ARTIFACTS.slice(0, show).map((artifact, i) => {
           const isActive = active === artifact.id;
           return (
