@@ -12,7 +12,7 @@ const ROLES = [
 
 const STATS = [
   { label: "Years coding", value: "5+" },
-  { label: "Projects shipped", value: "9" },
+  // { label: "Projects shipped", value: "9" },
   { label: "UI components", value: "50+" },
   { label: "Lines written", value: "∞" },
 ];
@@ -130,7 +130,7 @@ export function HeroSection() {
 
       {/* Stats row */}
       <motion.div
-        className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-3xl z-10"
+        className="grid grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-3xl z-10"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7, duration: 0.7 }}
