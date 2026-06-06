@@ -249,9 +249,9 @@ export function ExperienceSection() {
                           className="mt-5 pt-5"
                           style={{ borderTop: "1px solid rgba(255,255,255,0.06)", overflow: "hidden" }}
                         >
-                          <p style={{ fontSize: "0.875rem", color: "#94a3b8", lineHeight: 1.75, marginBottom: 14 }}>
+                          {/* <p style={{ fontSize: "0.875rem", color: "#94a3b8", lineHeight: 1.75, marginBottom: 14 }}>
                             {exp.description}
-                          </p>
+                          </p> */}
                           <div className="flex flex-wrap gap-2">
                             {exp.tags.map((tag) => (
                               <span
