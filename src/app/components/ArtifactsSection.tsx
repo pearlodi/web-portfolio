@@ -348,7 +348,7 @@ export function ArtifactsSection() {
                        <div className="flex-col md:flex-row flex gap-2 ">
       {/* Apple App Store Button */}
       <a
-        href="https://apple.com"
+        href="https://apps.apple.com/app/aedion/id6757245117"
         target="_blank"
         rel="noopener noreferrer"
         className="group inline-flex  items-center rounded-lg border border-neutral-400 bg-black px-4 py-1 text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-neutral-900"
@@ -373,7 +373,7 @@ export function ArtifactsSection() {
 
       {/* Google Play Store Button */}
       <a
-        href="https://google.com"
+        href="https://play.google.com/store/apps/details?id=ai.aedion.app"
         target="_blank"
         rel="noopener noreferrer"
         className="group inline-flex  items-center rounded-lg border border-neutral-400 bg-black px-4 py-0.5 text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-neutral-900"

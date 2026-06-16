@@ -18,7 +18,6 @@ export default function App() {
       <FloatingOrbs />
       <NavBar />
 
-      {/* Offset right of the 200px sidebar + 16px left + 8px gap = 224px */}
       <main className="relative z-10 md:pl-[224px]">
         <section id="hero">
           <HeroSection />
@@ -39,7 +38,7 @@ export default function App() {
           <ContactSection />
         </section>
       </main>
-      <PortfolioAssistant />
+      {/* <PortfolioAssistant /> */}
     </div>
   );
 }
