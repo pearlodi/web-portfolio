@@ -117,7 +117,7 @@ const ARTIFACTS = [
     tags: ["React", "GraphQL", "Apollo Client", "Zustand"],
     variant: "pink" as const,
     status: "live",
-    link: "abittoglobal.coms",
+    link: "abittoglobal.com/",
     image: abitto,
     company: "Abitto",
   },
