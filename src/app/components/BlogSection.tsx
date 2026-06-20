@@ -6,6 +6,29 @@ import React from "react";
 const ARTICLES = [
   {
     id: 1,
+    title: "JavaScript Prototypal Inheritance",
+    excerpt:
+      "Simply put, Inheritance is mainly used to reduce code duplication. Instead of rewriting the same functionality over and over again, we can write it once and reuse it.",
+    tag: "Javascript",
+    tagColor: "#00f5d4",
+    readTime: "6 min",
+    image: "https://cdn.hashnode.com/uploads/covers/65936d6577114573dc866614/fe0762fc-928c-4565-9723-e2b0ef5ca3c5.svg",
+    featured: false,
+    href:"https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/Sk26-Fynp"
+  },
+  {
+    id: 2,
+    title: "Factory Functions and Constructor Functions in JavaScript",
+    excerpt:"A factory function is a function that creates objects and returns them. But why do we need a function to create objects, cant we just do this?",
+    tag: "Functions",
+    tagColor: "#0000FF",
+    readTime: "6 min",
+    image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fepcromwmc7ge3dnj6h89.png",
+    featured: false,
+    href:"https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/Sk26-Fynp"
+  },
+  {
+    id: 6,
     title: "Animate on Scroll in React & Vue",
     excerpt:
       "A deep dive into scroll-triggered animations — from Intersection Observer basics to orchestrated entrance sequences. Covers implementation in both React and Vue with reusable hooks and composables.",
@@ -13,22 +36,23 @@ const ARTICLES = [
     tagColor: "#00f5d4",
     readTime: "6 min",
     image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=700&q=80",
-    featured: true,
-  },
-  {
-    id: 2,
-    title: "The HTML-JSX Fusion: Where Two Worlds Collide",
-    excerpt:
-      "JSX is the fusion point where HTML's structure collides with JavaScript's power. Learn how JSX transforms your mental model and why it's more than just syntactic sugar.",
-    tag: "React",
-    tagColor: "#8b5cf6",
-    readTime: "4 min",
-    image: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=700&q=80",
     featured: false,
+    href:"https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/Sk26-Fynp"
   },
+  // {
+  //   id: 2,
+  //   title: "The HTML-JSX Fusion: Where Two Worlds Collide",
+  //   excerpt:
+  //     "JSX is the fusion point where HTML's structure collides with JavaScript's power. Learn how JSX transforms your mental model and why it's more than just syntactic sugar.",
+  //   tag: "React",
+  //   tagColor: "#8b5cf6",
+  //   readTime: "4 min",
+  //   image: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=700&q=80",
+  //   featured: false,
+  // },
   {
     id: 3,
-    title: "React Hooks Demystified",
+    title: "React Hooks ",
     excerpt:
       "Simplifying component logic with useState, useEffect, and custom hooks. A practical guide to replacing class component patterns with elegant, composable function hooks.",
     tag: "React",
@@ -36,6 +60,7 @@ const ARTICLES = [
     readTime: "5 min",
     image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=700&q=80",
     featured: false,
+    href:"https://dev.to/pearlodi/react-hooks-hal/edit"
   },
   {
     id: 4,
@@ -47,6 +72,7 @@ const ARTICLES = [
     readTime: "7 min",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=700&q=80",
     featured: false,
+    href:"https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/S1f1pjChp"
   },
   {
     id: 5,
@@ -58,6 +84,7 @@ const ARTICLES = [
     readTime: "8 min",
     image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=700&q=80",
     featured: false,
+    href:"https://dev.to/pearlodi/react-components-3oa2"
   },
 ];
 
@@ -156,13 +183,14 @@ function ArticleCard({
                 <Clock size={10} />
                 {article.readTime} read
               </div>
-              <button
-                className="flex items-center gap-1 transition-all duration-200 hover:gap-2"
+              <a
+                href={article.href}
+                className="flex items-center cursor-pointer gap-1 transition-all duration-200 hover:gap-2"
                 style={{ fontSize: "0.75rem", fontWeight: 600, color: article.tagColor }}
               >
                 Read more
                 <ArrowUpRight size={13} />
-              </button>
+              </a>
             </div>
           </div>
         </div>
