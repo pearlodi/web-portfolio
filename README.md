@@ -1,11 +1,11 @@
+# Pearl Odi — Portfolio
 
-  # Unique Animated Glassmorphism UI
+A personal portfolio website showcasing my skills and projects.
 
-  This is a code bundle for Unique Animated Glassmorphism UI. The original project is available at https://www.figma.com/design/tYPGjrPosuwaPXgLvLHejX/Unique-Animated-Glassmorphism-UI.
+🌐 [pearlodi.netlify.app](https://pearlodi.netlify.app)
 
-  ## Running the code
+## Tech Stack
+- React, Vite, TypeScript, Tailwind CSS
 
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
-  
+## Contact
+pearlodi7@gmail.com
