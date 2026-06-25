@@ -22,10 +22,10 @@ export default function App() {
         <section id="hero">
           <HeroSection />
         </section>
-        <section id="artifacts">
+        <section id="projects">
           <ArtifactsSection />
         </section>
-        <section id="constellation">
+        <section id="skills">
           <ConstellationSection />
         </section>
         <section id="experience">
@@ -34,7 +34,7 @@ export default function App() {
         <section id="articles">
           <BlogSection />
         </section>
-        <section id="signal">
+        <section id="contact">
           <ContactSection />
         </section>
       </main>

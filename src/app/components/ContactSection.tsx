@@ -92,7 +92,7 @@ export function ContactSection() {
           viewport={{ once: true }}
         >
           <div style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#00f5d4", fontFamily: "'JetBrains Mono', monospace", marginBottom: 12 }}>
-            06 / SIGNAL
+            06 / Contact
           </div>
           <h2
             style={{
@@ -122,7 +122,7 @@ export function ContactSection() {
             <GlowBorderCard variant="violet" rounded="rounded-2xl">
               <div className="p-6">
                 <p style={{ fontSize: "0.92rem", color: "#94a3b8", lineHeight: 1.8, marginBottom: 24 }}>
-                  I'm open to frontend and mobile roles, contract engagements, and collaborations. Whether it's a product idea or a team needing a reliable developer — let's talk.
+                  I'm open to frontend and mobile roles, contract engagements, and collaborations. Whether it's a product idea or a team needing a reliable developer let's talk.
                 </p>
                 <div className="space-y-2.5">
                   {SOCIALS.map((social) => {

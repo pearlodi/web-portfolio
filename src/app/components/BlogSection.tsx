@@ -12,20 +12,23 @@ const ARTICLES = [
     tag: "Javascript",
     tagColor: "#00f5d4",
     readTime: "6 min",
-    image: "https://cdn.hashnode.com/uploads/covers/65936d6577114573dc866614/fe0762fc-928c-4565-9723-e2b0ef5ca3c5.svg",
+    image:
+      "https://cdn.hashnode.com/uploads/covers/65936d6577114573dc866614/fe0762fc-928c-4565-9723-e2b0ef5ca3c5.svg",
     featured: false,
-    href:"https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/Sk26-Fynp"
+    href: "https://pearlblogs.hashnode.dev/javascript-prototypal-inheritance",
   },
   {
     id: 2,
     title: "Factory Functions and Constructor Functions in JavaScript",
-    excerpt:"A factory function is a function that creates objects and returns them. But why do we need a function to create objects, cant we just do this?",
+    excerpt:
+      "A factory function is a function that creates objects and returns them. But why do we need a function to create objects, cant we just do this?",
     tag: "Functions",
     tagColor: "#0000FF",
     readTime: "6 min",
-    image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fepcromwmc7ge3dnj6h89.png",
+    image:
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fepcromwmc7ge3dnj6h89.png",
     featured: false,
-    href:"https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/Sk26-Fynp"
+    href: "https://dev.to/pearlodi/factory-functions-and-constructor-functions-in-javascript-lmb",
   },
   {
     id: 6,
@@ -35,9 +38,10 @@ const ARTICLES = [
     tag: "Animation",
     tagColor: "#00f5d4",
     readTime: "6 min",
-    image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=700&q=80",
+    image:
+      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=700&q=80",
     featured: false,
-    href:"https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/Sk26-Fynp"
+    href: "https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/Sk26-Fynp",
   },
   // {
   //   id: 2,
@@ -58,9 +62,10 @@ const ARTICLES = [
     tag: "React",
     tagColor: "#8b5cf6",
     readTime: "5 min",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=700&q=80",
+    image:
+      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=700&q=80",
     featured: false,
-    href:"https://dev.to/pearlodi/react-hooks-hal/edit"
+    href: "https://dev.to/pearlodi/react-hooks-hal/edit",
   },
   {
     id: 4,
@@ -70,9 +75,10 @@ const ARTICLES = [
     tag: "Privacy",
     tagColor: "#fbbf24",
     readTime: "7 min",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=700&q=80",
+    image:
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=700&q=80",
     featured: false,
-    href:"https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/S1f1pjChp"
+    href: "https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/S1f1pjChp",
   },
   {
     id: 5,
@@ -82,9 +88,10 @@ const ARTICLES = [
     tag: "Architecture",
     tagColor: "#f472b6",
     readTime: "8 min",
-    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=700&q=80",
+    image:
+      "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=700&q=80",
     featured: false,
-    href:"https://dev.to/pearlodi/react-components-3oa2"
+    href: "https://dev.to/pearlodi/react-components-3oa2",
   },
 ];
 
@@ -118,19 +125,35 @@ function ArticleCard({
       >
         <div className="flex flex-col h-full overflow-hidden">
           {/* Cover image */}
-          <div className="relative overflow-hidden" style={{ height: article.featured ? 240 : 160, flexShrink: 0 }}>
+          <div
+            className="relative overflow-hidden"
+            style={{ height: article.featured ? 240 : 160, flexShrink: 0 }}
+          >
             <img
               src={article.image}
               alt={article.title}
-              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", transition: "transform 0.5s ease" }}
-              onMouseEnter={(e) => ((e.currentTarget as HTMLImageElement).style.transform = "scale(1.04)")}
-              onMouseLeave={(e) => ((e.currentTarget as HTMLImageElement).style.transform = "scale(1)")}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                display: "block",
+                transition: "transform 0.5s ease",
+              }}
+              onMouseEnter={(e) =>
+                ((e.currentTarget as HTMLImageElement).style.transform =
+                  "scale(1.04)")
+              }
+              onMouseLeave={(e) =>
+                ((e.currentTarget as HTMLImageElement).style.transform =
+                  "scale(1)")
+              }
             />
             <div
               style={{
                 position: "absolute",
                 inset: 0,
-                background: "linear-gradient(to bottom, rgba(5,5,20,0.05), rgba(5,5,20,0.7))",
+                background:
+                  "linear-gradient(to bottom, rgba(5,5,20,0.05), rgba(5,5,20,0.7))",
               }}
             />
             {/* Tag pill */}
@@ -178,15 +201,29 @@ function ArticleCard({
             </p>
 
             {/* Footer */}
-            <div className="flex items-center justify-between mt-auto pt-3" style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}>
-              <div className="flex items-center gap-1.5" style={{ color: "#475569", fontSize: "0.68rem", fontFamily: "'JetBrains Mono', monospace" }}>
+            <div
+              className="flex items-center justify-between mt-auto pt-3"
+              style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
+            >
+              <div
+                className="flex items-center gap-1.5"
+                style={{
+                  color: "#475569",
+                  fontSize: "0.68rem",
+                  fontFamily: "'JetBrains Mono', monospace",
+                }}
+              >
                 <Clock size={10} />
                 {article.readTime} read
               </div>
               <a
                 href={article.href}
                 className="flex items-center cursor-pointer gap-1 transition-all duration-200 hover:gap-2"
-                style={{ fontSize: "0.75rem", fontWeight: 600, color: article.tagColor }}
+                style={{
+                  fontSize: "0.75rem",
+                  fontWeight: 600,
+                  color: article.tagColor,
+                }}
               >
                 Read more
                 <ArrowUpRight size={13} />
@@ -213,7 +250,15 @@ export function BlogSection() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <div style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#00f5d4", fontFamily: "'JetBrains Mono', monospace", marginBottom: 12 }}>
+          <div
+            style={{
+              fontSize: "0.7rem",
+              letterSpacing: "0.25em",
+              color: "#00f5d4",
+              fontFamily: "'JetBrains Mono', monospace",
+              marginBottom: 12,
+            }}
+          >
             05 / ARTICLES
           </div>
           <h2
@@ -221,26 +266,28 @@ export function BlogSection() {
               fontSize: "clamp(2.5rem, 5vw, 4.5rem)",
               fontWeight: 800,
               letterSpacing: "-0.03em",
-              background: "linear-gradient(135deg, #ffffff 50%, rgba(255,255,255,0.4))",
+              background:
+                "linear-gradient(135deg, #ffffff 50%, rgba(255,255,255,0.4))",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
             }}
           >
             Writing &amp;
-            <br />thinking out loud
+            <br />
+            thinking out loud
           </h2>
         </motion.div>
 
-        {/* Featured + grid layout */}
-          {/* Featured article — takes 2 cols */}
-         
-          {/* Rest — 2x2 grid in remaining 3 cols */}
-          <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {rest.map((article, i) => (
-              <ArticleCard key={article.id} article={article} delay={0.08 * (i + 1)} />
-            ))}
-          </div>
+        <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {rest.map((article, i) => (
+            <ArticleCard
+              key={article.id}
+              article={article}
+              delay={0.08 * (i + 1)}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

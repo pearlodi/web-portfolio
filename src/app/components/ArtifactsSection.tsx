@@ -34,7 +34,13 @@ const ARTIFACTS = [
     tagline: "AI wellness companion for health tracking",
     description:
       "Mobile application that enables AI-powered skin and eye scans, health record tracking, appointment management, and conversational wellness guidance. Designed to help users monitor changes over time through a seamless mobile experience.",
-    tags: ["React Native", "Expo Go", "Native wind", "Apollo Client", "Zustand"],
+    tags: [
+      "React Native",
+      "Expo Go",
+      "Native wind",
+      "Apollo Client",
+      "Zustand",
+    ],
     variant: "pink" as const,
     status: "live",
     link: "https://apps.apple.com/app/aedion/id6757245117",
@@ -150,12 +156,11 @@ const ARTIFACTS = [
 ];
 
 export function ArtifactsSection() {
-  // First card is active by default
   const [active, setActive] = useState<number>(1);
   const [show, setShow] = useState<number>(4);
 
   return (
-    <section className="relative py-32 px-6 max-w-7xl mx-auto" id="artifacts">
+    <section className="relative py-32 px-6 max-w-7xl mx-auto" id="projects˝">
       {/* Header */}
       <motion.div
         className="mb-20"
@@ -173,7 +178,7 @@ export function ArtifactsSection() {
             marginBottom: 12,
           }}
         >
-          02 / ARTIFACTS
+          02 / PROJECTS
         </div>
         <h2
           style={{
@@ -329,8 +334,8 @@ export function ArtifactsSection() {
                       style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
                     >
                       {artifact.google || artifact.apple ? (
-                       <>
-                         {/* <a
+                        <>
+                          {/* <a
                          href={artifact.apple}
                          target="_blank"
                          rel="noopener noreferrer"
@@ -345,40 +350,40 @@ export function ArtifactsSection() {
                        >
                          <button>Get it on Google Play</button>
                        </a> */}
-                       <div className="flex-col md:flex-row flex gap-2 ">
-      {/* Apple App Store Button */}
-      <a
-        href="https://apps.apple.com/app/aedion/id6757245117"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group inline-flex  items-center rounded-lg border border-neutral-400 bg-black px-4 py-1 text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-neutral-900"
-      >
-        <svg
-          className="h-5 w-4 flex-shrink-0 fill-current"
-          viewBox="0 0 384 512"
-          xmlns="http://w3.org"
-          aria-hidden="true"
-        >
-          <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 47.5-24.4 76.5 26.9 2.4 51.2-16 68.3-38.9z" />
-        </svg>
-        <div className="ml-3 flex flex-col items-start justify-center leading-tight">
-          <span className="text-[7px] font-normal uppercase tracking-wider opacity-90">
-            Download on the
-          </span>
-          <span className="-mt-0.5 text-xs font-semibold tracking-tight">
-            App Store
-          </span>
-        </div>
-      </a>
+                          <div className="flex-col md:flex-row flex gap-2 ">
+                            {/* Apple App Store Button */}
+                            <a
+                              href="https://apps.apple.com/app/aedion/id6757245117"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="group inline-flex  items-center rounded-lg border border-neutral-400 bg-black px-4 py-1 text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-neutral-900"
+                            >
+                              <svg
+                                className="h-5 w-4 flex-shrink-0 fill-current"
+                                viewBox="0 0 384 512"
+                                xmlns="http://w3.org"
+                                aria-hidden="true"
+                              >
+                                <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 47.5-24.4 76.5 26.9 2.4 51.2-16 68.3-38.9z" />
+                              </svg>
+                              <div className="ml-3 flex flex-col items-start justify-center leading-tight">
+                                <span className="text-[7px] font-normal uppercase tracking-wider opacity-90">
+                                  Download on the
+                                </span>
+                                <span className="-mt-0.5 text-xs font-semibold tracking-tight">
+                                  App Store
+                                </span>
+                              </div>
+                            </a>
 
-      {/* Google Play Store Button */}
-      <a
-        href="https://play.google.com/store/apps/details?id=ai.aedion.app"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group inline-flex  items-center rounded-lg border border-neutral-400 bg-black px-4 py-0.5 text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-neutral-900"
-      >
-        {/* <svg
+                            {/* Google Play Store Button */}
+                            <a
+                              href="https://play.google.com/store/apps/details?id=ai.aedion.app"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="group inline-flex  items-center rounded-lg border border-neutral-400 bg-black px-4 py-0.5 text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-neutral-900"
+                            >
+                              {/* <svg
           className="h-5 w-4 flex-shrink-0 fill-current"
           viewBox="0 0 512 512"
           xmlns="http://w3.org"
@@ -386,22 +391,21 @@ export function ArtifactsSection() {
         >
           <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58 33.4-60.1-60.1 60.1-60.1 58 33.4c13.1 7.6 21.8 19.7 21.8 33.3 0 13.6-8.7 25.7-21.8 33.3zM104.6 499l220.7-126.7-60.1-60.1L104.6 499z" />
         </svg> */}
-        <img 
-          className="h-5 w-4 flex-shrink-0 fill-current"
-        
-        src={plays}/>
-        <div className="ml-3 flex flex-col items-start justify-center leading-tight">
-          <span className="text-[7px] font-normal uppercase tracking-wider opacity-90">
-            GET IT ON
-          </span>
-          <span className="-mt-0.5 text-xs font-semibold tracking-tight">
-            Google Play
-          </span>
-        </div>
-      </a>
-    </div>
-                       </>
-                  
+                              <img
+                                className="h-5 w-4 flex-shrink-0 fill-current"
+                                src={plays}
+                              />
+                              <div className="ml-3 flex flex-col items-start justify-center leading-tight">
+                                <span className="text-[7px] font-normal uppercase tracking-wider opacity-90">
+                                  GET IT ON
+                                </span>
+                                <span className="-mt-0.5 text-xs font-semibold tracking-tight">
+                                  Google Play
+                                </span>
+                              </div>
+                            </a>
+                          </div>
+                        </>
                       ) : (
                         <a
                           href={`https://${artifact.link}`}
@@ -457,23 +461,27 @@ export function ArtifactsSection() {
       </div>
       <div className="flex items-center justify-end gap-4 mt-8">
         {show < ARTIFACTS.length && (
-           <button
-           onClick={() => setShow((prevShow) => prevShow + 2)}
-           type="submit"
-           className="flex items-center justify-center gap-2 py-2 cursor-pointer px-4 rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
-           style={{
-             background:  "linear-gradient(135deg, #00f5d4, #8b5cf6)",
-             color:  "#05050f",
-             fontWeight: 700,
-             boxShadow: "0 0 40px rgba(0,245,212,0.15)",
-           }}
-         >
-          load more
-         </button>
-       
+          <button
+            onClick={() => setShow((prevShow) => prevShow + 2)}
+            type="submit"
+            className="flex items-center justify-center gap-2 py-2 cursor-pointer px-4 rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+            style={{
+              background: "linear-gradient(135deg, #00f5d4, #8b5cf6)",
+              color: "#05050f",
+              fontWeight: 700,
+              boxShadow: "0 0 40px rgba(0,245,212,0.15)",
+            }}
+          >
+            load more
+          </button>
         )}
         {show > 4 && (
-          <p className="cursor-pointer text-xl font-extrabold bg-gradient-to-r from-violet-500 to-pink-400 bg-clip-text text-transparent" onClick={() => setShow((prevShow) => prevShow - 2)}>show less</p>
+          <p
+            className="cursor-pointer text-xl font-extrabold bg-gradient-to-r from-violet-500 to-pink-400 bg-clip-text text-transparent"
+            onClick={() => setShow((prevShow) => prevShow - 2)}
+          >
+            show less
+          </p>
         )}
       </div>
     </section>

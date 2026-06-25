@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-
+import React from "react";
 const SKILLS = [
-  // Frameworks / Frontend
   { id: "react", label: "React", level: 96, cx: 90, cy: 90, cat: "Framework" },
   { id: "nextjs", label: "Next.js", level: 92, cx: 190, cy: 60, cat: "Framework" },
   { id: "vue", label: "Vue", level: 80, cx: 155, cy: 145, cat: "Framework" },
@@ -10,25 +9,21 @@ const SKILLS = [
   { id: "ts", label: "TypeScript", level: 92, cx: 330, cy: 65, cat: "Framework" },
   { id: "js", label: "JavaScript", level: 95, cx: 390, cy: 108, cat: "Framework" },
 
-  // Mobile
   { id: "rn", label: "React Native", level: 88, cx: 480, cy: 78, cat: "Mobile" },
   { id: "expo", label: "Expo", level: 82, cx: 565, cy: 50, cat: "Mobile" },
   { id: "nativewind", label: "NativeWind", level: 78, cx: 530, cy: 138, cat: "Mobile" },
 
-  // UI Libraries
   { id: "tailwind", label: "Tailwind", level: 93, cx: 440, cy: 175, cat: "UI Library" },
   { id: "shadcn", label: "shadcn/ui", level: 90, cx: 525, cy: 205, cat: "UI Library" },
   { id: "mui", label: "Material UI", level: 82, cx: 620, cy: 175, cat: "UI Library" },
   { id: "chakra", label: "Chakra UI", level: 80, cx: 665, cy: 108, cat: "UI Library" },
   { id: "antd", label: "Ant Design", level: 75, cx: 700, cy: 200, cat: "UI Library" },
 
-  // State & API
   { id: "zustand", label: "Zustand", level: 88, cx: 175, cy: 275, cat: "State / API" },
   { id: "redux", label: "Redux", level: 80, cx: 275, cy: 300, cat: "State / API" },
   { id: "graphql", label: "GraphQL", level: 84, cx: 370, cy: 270, cat: "State / API" },
   { id: "apollo", label: "Apollo Client", level: 82, cx: 470, cy: 305, cat: "State / API" },
 
-  // Tools
   { id: "figma", label: "Figma", level: 90, cx: 95, cy: 220, cat: "Tools" },
   { id: "github", label: "GitHub", level: 92, cx: 90, cy: 310, cat: "Tools" },
 ];
@@ -76,7 +71,7 @@ export function ConstellationSection() {
           viewport={{ once: true }}
         >
           <div style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#00f5d4", fontFamily: "'JetBrains Mono', monospace", marginBottom: 12 }}>
-            03 / CONSTELLATION
+            03 / SKILLS
           </div>
           <h2
             style={{

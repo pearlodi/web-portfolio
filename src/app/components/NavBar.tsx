@@ -1,26 +1,24 @@
+import React from "react";
+
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, Layers, Telescope, Briefcase, BookOpen, Mail } from "lucide-react";
-import React from "react";
+import logo from "../../images/pearlslogo.png";
 
 const LINKS = [
-  { label: "Artifacts", href: "#artifacts", icon: Layers },
-  { label: "Skills", href: "#constellation", icon: Telescope },
+  { label: "Projects", href: "#projects", icon: Layers },
+  { label: "Skills", href: "#skills", icon: Telescope },
   { label: "Experience", href: "#experience", icon: Briefcase },
   { label: "Articles", href: "#articles", icon: BookOpen },
-  { label: "Signal", href: "#signal", icon: Mail },
+  { label: "Contact", href: "#contact", icon: Mail },
 ];
 
 function SidebarContent() {
   return (
-    <div className="p-5 h-full flex flex-col gap-6">
+    <div className="p-5 h-full flex flex-col gap-3">
       {/* Logo */}
-      <div className="flex items-center gap-2.5 pt-1">
-        <motion.div
-          style={{ width: 10, height: 10, borderRadius: "50%", background: "#00f5d4", flexShrink: 0 }}
-          animate={{ scale: [1, 1.4, 1], opacity: [1, 0.6, 1] }}
-          transition={{ duration: 2.5, repeat: Infinity }}
-        />
+      <div className="flex items-start gap-2.5 pt-1">
+        <img src={logo} alt="logo" width={24} height={24}/>
         <div>
           <div style={{ fontSize: "0.95rem", fontWeight: 800, color: "#f1f5f9", letterSpacing: "-0.02em", lineHeight: 1.1 }}>
             Odi Pearl
@@ -31,10 +29,10 @@ function SidebarContent() {
         </div>
       </div>
 
-      {/* Divider */}
+      
       <div style={{ height: 1, background: "rgba(255,255,255,0.06)" }} />
 
-      {/* Nav links */}
+      
       <nav className="flex flex-col gap-1">
         {LINKS.map((link) => {
           const Icon = link.icon;
@@ -81,22 +79,23 @@ function SidebarContent() {
           Lagos, NG · Remote OK
         </div>
         <a
-          href="mailto:pearlodi7@gmail.com"
-          style={{
-            display: "block",
-            marginTop: 12,
-            textAlign: "center",
-            padding: "8px 0",
-            borderRadius: 10,
-            background: "linear-gradient(135deg, #00f5d4, #8b5cf6)",
-            color: "#05050f",
-            fontSize: "0.75rem",
-            fontWeight: 700,
-            textDecoration: "none",
-          }}
-        >
-          Hire me ↗
-        </a>
+         href="/pearlresume.pdf"
+         download
+         style={{
+           display: "block",
+           marginTop: 12,
+           textAlign: "center",
+           padding: "8px 0",
+           borderRadius: 10,
+           background: "linear-gradient(135deg, #00f5d4, #8b5cf6)",
+           color: "#05050f",
+           fontSize: "0.75rem",
+           fontWeight: 700,
+           textDecoration: "none",
+         }}
+       >
+         Download Resume ↓
+       </a>
       </div>
     </div>
   );
