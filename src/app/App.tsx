@@ -38,7 +38,7 @@ export default function App() {
           <ContactSection />
         </section>
       </main>
-      {/* <PortfolioAssistant /> */}
+      <PortfolioAssistant />
     </div>
   );
 }
