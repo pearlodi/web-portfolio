@@ -20,7 +20,7 @@ const ARTIFACTS = [
     name: "Aedion AI",
     tagline: "AI-powered wellness guidance and health pattern tracking",
     description:
-      "A wellness platform that combines AI health chat, skin and eye pattern analysis, and longitudinal health tracking. Users can explore potential wellness patterns, monitor scan history, and access educational health resources through an intuitive digital experience.",
+      "Developed the frontend for Aedion AI with Next.js, React, TypeScript, and Tailwind CSS. Connected the application to GraphQL APIs using Apollo Client and built features including authentication, voice recording, markdown rendering, and animated UI interactions. Zustand was used for shared state management, with the project structured around reusable components.",
     tags: ["Next js", "GraphQL", "Apollo Client", "Zustand", "Tailwind", "+5"],
     variant: "pink" as const,
     status: "live",
@@ -67,7 +67,7 @@ const ARTIFACTS = [
     name: "Zeta Brent Education",
     tagline: "Digital learning platform for modern education",
     description:
-      "Comprehensive e-learning platform featuring course management, student progress monitoring, interactive learning experiences, and educator tools. Built to deliver a seamless online education experience across devices.",
+      "Built the frontend for a study abroad consultancy website using React and TypeScript. Developed multiple pages for programs, admissions, visa guidance, and student applications. Implemented form flows for inquiries and consultations, along with responsive layouts for mobile and desktop users. Focused on clean navigation and structured UI to help students easily explore services and submit applications.",
     tags: ["React", "GraphQL", "Apollo Client", "Zustand"],
     variant: "amber" as const,
     status: "live",
