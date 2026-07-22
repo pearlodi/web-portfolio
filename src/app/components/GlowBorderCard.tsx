@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { motion, useMotionValue, useTransform } from "motion/react";
 import React from "react";
 
-type GlowVariant = "cyan" | "violet" | "amber" | "pink";
+type GlowVariant = "cyan" | "violet" | "amber" | "pink" | "green";
 
 interface GlowBorderCardProps {
   children: React.ReactNode;
@@ -17,6 +17,7 @@ const variantClass: Record<GlowVariant, string> = {
   violet: "glow-border-violet",
   amber: "glow-border-amber",
   pink: "glow-border-violet",
+  green: "glow-border-green",
 };
 
 export function GlowBorderCard({

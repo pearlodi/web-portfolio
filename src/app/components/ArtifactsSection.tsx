@@ -14,6 +14,7 @@ import personal from "../../images/personal.webp";
 import aedion from "../../images/aedionwe.webp";
 import aedionapp from "../../images/aedionapp.webp";
 import plays from "../../images/plyn.png";
+import cephf from "../../images/cephfs.png";
 const ARTIFACTS = [
   {
     id: 1,
@@ -48,6 +49,26 @@ const ARTIFACTS = [
     company: "Toks Net",
     apple: "https://apps.apple.com/app/aedion/id6757245117",
     google: "https://play.google.com/store/apps/details?id=ai.aedion.app",
+  },
+  {
+    id: 11,
+    name: "CEPHF Website",
+    tagline: "Public platform for environmental and public health initiatives",
+    description:
+      "Built the frontend for the Community Environmental Protection and Health Foundation (CEPHF) website using Next.js, TypeScript, and Tailwind CSS. Developed reusable components and dynamic pages for news, projects, research archives, FAQs, and donations. Integrated API-driven content, responsive layouts, and modern UI interactions to create a fast, accessible, and maintainable experience.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Qroq Ai",
+      "shadcn/ui",
+      "REST API",
+      "+3",
+    ],
+    variant: "cyan" as const,
+    status: "live",
+    link: "cephf.org",
+    image: cephf,
+    company: "CEPHF",
   },
   {
     id: 3,
@@ -157,7 +178,7 @@ const ARTIFACTS = [
 
 export function ArtifactsSection() {
   const [active, setActive] = useState<number>(1);
-  const [show, setShow] = useState<number>(4);
+  const [show, setShow] = useState<number>(8);
 
   return (
     <section className="relative py-32 px-6 max-w-7xl mx-auto" id="projects˝">
@@ -459,7 +480,7 @@ export function ArtifactsSection() {
           );
         })}
       </div>
-      <div className="flex items-center justify-end gap-4 mt-8">
+      <div className="flex items-center justify-center gap-4 mt-8">
         {show < ARTIFACTS.length && (
           <button
             onClick={() => setShow((prevShow) => prevShow + 2)}
