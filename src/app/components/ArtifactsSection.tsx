@@ -52,10 +52,10 @@ const ARTIFACTS = [
   },
   {
     id: 11,
-    name: "CEPHF Website",
+    name: "CEPHF ",
     tagline: "Public platform for environmental and public health initiatives",
     description:
-      "Built the frontend for the Community Environmental Protection and Health Foundation (CEPHF) website using Next.js, TypeScript, and Tailwind CSS. Developed reusable components and dynamic pages for news, projects, research archives, FAQs, and donations. Integrated API-driven content, responsive layouts, and modern UI interactions to create a fast, accessible, and maintainable experience.",
+      "Built the frontend and dashboard for the Community Environmental Protection and Health Foundation (CEPHF) website using Next.js, TypeScript, and Tailwind CSS. Developed reusable components and dynamic pages for news, projects, research archives, FAQs, and donations. Integrated API-driven content, responsive layouts, and modern UI interactions to create a fast, accessible, and maintainable experience. It also comes with a CMS dashboard to manage the contents on the website",
     tags: [
       "Next.js",
       "TypeScript",
