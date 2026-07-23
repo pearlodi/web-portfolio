@@ -268,7 +268,7 @@ Total experience: 5+ years coding, 4+ years professional frontend experience —
     <>
       {/* ── Floating trigger button ── */}
       <div className="fixed bottom-6 right-6 z-[60] flex flex-col items-end gap-2">
-        {/* "Ask Odi" label */}
+        {/* "Ask Pearl" label */}
         <AnimatePresence>
           {!open && (
             <motion.div
@@ -289,7 +289,7 @@ Total experience: 5+ years coding, 4+ years professional frontend experience —
                 boxShadow: "0 4px 20px rgba(0,0,0,0.4)",
               }}
             >
-              Ask Odi ✦
+              Ask Pearl ✦
             </motion.div>
           )}
         </AnimatePresence>

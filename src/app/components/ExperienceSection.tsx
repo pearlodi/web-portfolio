@@ -126,7 +126,7 @@ export function ExperienceSection() {
           <div
             style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#00f5d4", fontFamily: "'JetBrains Mono', monospace", marginBottom: 12 }}
           >
-            03 / EXPERIENCE
+            04 / EXPERIENCE
           </div>
           <h2
             style={{

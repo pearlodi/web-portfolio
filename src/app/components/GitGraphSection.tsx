@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { GlowBorderCard } from "./GlowBorderCard";
 import { GitBranch, GitCommit, GitMerge, Tag } from "lucide-react";
-
+import React from 'react'
 const CELL_W = 88;
 const CELL_H = 58;
 const PAD_X = 50;
