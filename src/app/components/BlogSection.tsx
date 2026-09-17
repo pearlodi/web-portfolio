@@ -2,7 +2,10 @@ import { motion } from "motion/react";
 import { ArrowUpRight, Clock } from "lucide-react";
 import { GlowBorderCard } from "./GlowBorderCard";
 import React from "react";
-
+import aos from "../../images/aos.png";
+import hook from "../../images/hook.png";
+import finger from "../../images/finger.jpg";
+import comp from "../../images/comp.webp";
 const ARTICLES = [
   {
     id: 1,
@@ -39,7 +42,7 @@ const ARTICLES = [
     tagColor: "#00f5d4",
     readTime: "6 min",
     image:
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=700&q=80",
+     aos,
     featured: false,
     href: "https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/Sk26-Fynp",
   },
@@ -63,8 +66,7 @@ const ARTICLES = [
     tagColor: "#8b5cf6",
     readTime: "5 min",
     image:
-      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=700&q=80",
-    featured: false,
+hook,    featured: false,
     href: "https://dev.to/pearlodi/react-hooks-hal/edit",
   },
   {
@@ -76,7 +78,7 @@ const ARTICLES = [
     tagColor: "#fbbf24",
     readTime: "7 min",
     image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=700&q=80",
+      finger,
     featured: false,
     href: "https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/S1f1pjChp",
   },
@@ -89,7 +91,7 @@ const ARTICLES = [
     tagColor: "#f472b6",
     readTime: "8 min",
     image:
-      "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=700&q=80",
+    comp,
     featured: false,
     href: "https://dev.to/pearlodi/react-components-3oa2",
   },

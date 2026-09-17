@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
+import React from "react";
 
 export function FloatingOrbs() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -30,7 +31,7 @@ export function FloatingOrbs() {
       />
 
       {/* Static ambient orbs */}
-      <motion.div
+      {/* <motion.div
         className="absolute rounded-full"
         style={{
           width: 700,
@@ -77,10 +78,10 @@ export function FloatingOrbs() {
         }}
         animate={{ x: [0, -40, 60, 0], y: [0, 80, -30, 0] }}
         transition={{ duration: 22, repeat: Infinity, ease: "easeInOut", delay: 10 }}
-      />
+      /> */}
 
       {/* Grid overlay */}
-      <div
+      {/* <div
         className="absolute inset-0 opacity-[0.025]"
         style={{
           backgroundImage: `
@@ -89,7 +90,7 @@ export function FloatingOrbs() {
           `,
           backgroundSize: "80px 80px",
         }}
-      />
+      /> */}
 
       {/* Vignette */}
       <div

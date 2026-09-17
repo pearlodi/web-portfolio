@@ -224,7 +224,7 @@ Total experience: 5+ years coding, 4+ years professional frontend experience —
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            model: "llama-3.1-8b-instant",
+            model: "openai/gpt-oss-20b",
             messages: [
               { role: "system", content: SYSTEM_PROMPT },
               { role: "user", content: trimmed },

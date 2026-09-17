@@ -15,6 +15,10 @@ import aedion from "../../images/aedionwe.webp";
 import aedionapp from "../../images/aedionapp.webp";
 import plays from "../../images/plyn.png";
 import cephf from "../../images/cephfs.png";
+import aos from "../../images/aos.png";
+import hook from "../../images/hook.png";
+import finger from "../../images/finger.jpg";
+import comp from "../../images/comp.webp";
 const ARTIFACTS = [
   {
     id: 1,

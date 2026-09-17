@@ -212,33 +212,12 @@
 }
 
 .glow-border-active {
-  animation: glow-spin 3s linear infinite;
+  /* animation: glow-spin 3s linear infinite; */
   background: conic-gradient(
     from var(--glow-angle),
     transparent 0%,
     #00f5d4 15%,
     #8b5cf6 30%,
     transparent 45%
-  );
-}
-
-.glow-border-violet {
-  animation: glow-spin 4s linear infinite;
-  background: conic-gradient(
-    from var(--glow-angle),
-    transparent 0%,
-    #8b5cf6 20%,
-    #f472b6 35%,
-    transparent 50%
-  );
-}
-
-.glow-border-amber {
-  animation: glow-spin 5s linear infinite;
-  background: conic-gradient(
-    from var(--glow-angle),
-    transparent 0%,
-    #fbbf24 20%,
-    transparent 40%
   );
 }

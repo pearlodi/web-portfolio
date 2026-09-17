@@ -42,14 +42,7 @@ function SidebarContent() {
               href={link.href}
               className="flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 group"
               style={{ textDecoration: "none" }}
-              onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.background = "rgba(0,245,212,0.08)";
-                (e.currentTarget as HTMLElement).style.color = "#00f5d4";
-              }}
-              onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.background = "transparent";
-                (e.currentTarget as HTMLElement).style.color = "rgba(148,163,184,0.7)";
-              }}
+           
             >
               <Icon size={14} style={{ color: "inherit", flexShrink: 0 }} />
               <span style={{ fontSize: "0.82rem", color: "inherit", fontWeight: 500 }}>{link.label}</span>
@@ -146,26 +139,13 @@ export function NavBar() {
       </button>
 
       {/* ── Mobile drawer ── */}
-      <AnimatePresence>
         {mobileOpen && (
           <>
             {/* Backdrop */}
-            <motion.div
-              className="md:hidden fixed inset-0 z-40"
-              style={{ background: "rgba(0,0,0,0.6)", backdropFilter: "blur(4px)" }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setMobileOpen(false)}
-            />
+         
             {/* Drawer */}
             <motion.div
-              className="md:hidden fixed left-0 top-0 bottom-0 z-50"
-              style={{ width: 220 }}
-              initial={{ x: -220 }}
-              animate={{ x: 0 }}
-              exit={{ x: -220 }}
-              transition={{ type: "spring", stiffness: 320, damping: 30 }}
+ 
             >
               <div
                 className="h-full flex flex-col"
@@ -182,7 +162,6 @@ export function NavBar() {
             </motion.div>
           </>
         )}
-      </AnimatePresence>
     </>
   );
 }
