@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, Layers, Telescope, Briefcase, BookOpen, Mail } from "lucide-react";
 import logo from "../../images/pearlslogo.png";
@@ -71,7 +71,7 @@ function SidebarContent() {
         <div style={{ fontSize: "0.6rem", color: "#475569", fontFamily: "'JetBrains Mono', monospace", lineHeight: 1.6 }}>
           Lagos, NG · Remote OK
         </div>
-        <a
+       <a 
          href="/pearlresume.pdf"
          download
          style={{
@@ -97,12 +97,13 @@ function SidebarContent() {
 export function NavBar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  // Close mobile nav on scroll
-  useEffect(() => {
-    const onScroll = () => setMobileOpen(false);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  const toggleDrawer = () => {
+    setMobileOpen((v) => {
+      const next = !v;
+      document.body.style.overflow = next ? "hidden" : "";
+      return next;
+    });
+  };
 
   return (
     <>
@@ -126,7 +127,7 @@ export function NavBar() {
 
       {/* ── Mobile hamburger button ── */}
       <button
-        onClick={() => setMobileOpen((v) => !v)}
+        onClick={toggleDrawer}
         className="md:hidden fixed top-4 left-4 z-50 p-2.5 rounded-xl"
         style={{
           background: "rgba(5,5,20,0.85)",
@@ -139,20 +140,36 @@ export function NavBar() {
       </button>
 
       {/* ── Mobile drawer ── */}
+      <AnimatePresence>
         {mobileOpen && (
           <>
             {/* Backdrop */}
-         
+            <motion.div
+              onClick={toggleDrawer}
+              className="md:hidden fixed inset-0 z-40"
+              style={{ background: "rgba(0,0,0,0.35)" }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.25 }}
+            />
+
             {/* Drawer */}
             <motion.div
- 
+              className="md:hidden fixed top-0 left-0 z-50"
+              style={{ width: "60%", height: "100dvh" }}
+              initial={{ x: "-100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "-100%" }}
+              transition={{ type: "spring", stiffness: 300, damping: 32 }}
             >
               <div
                 className="h-full flex flex-col"
                 style={{
-                  background: "rgba(5,5,20,0.95)",
+                  background: "rgba(5,5,20,0.55)",
                   borderRight: "1px solid rgba(0,245,212,0.15)",
                   backdropFilter: "blur(24px)",
+                  WebkitBackdropFilter: "blur(24px)",
                 }}
               >
                 <div className="mt-14">
@@ -162,6 +179,7 @@ export function NavBar() {
             </motion.div>
           </>
         )}
+      </AnimatePresence>
     </>
   );
 }
