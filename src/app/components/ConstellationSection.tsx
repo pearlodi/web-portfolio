@@ -104,7 +104,7 @@ export function ConstellationSection() {
           </h2>
 
           {/* Tabs */}
-          <div className="flex flex-wrap gap-2">
+          {/* <div className="flex flex-wrap gap-2">
             {categories.map((category) => {
               const active = filter === category;
               const color =
@@ -131,7 +131,7 @@ export function ConstellationSection() {
                 </button>
               );
             })}
-          </div>
+          </div> */}
         </motion.div>
 
         {/* Skills container */}
